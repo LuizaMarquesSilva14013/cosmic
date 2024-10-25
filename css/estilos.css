@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Catchy';
+    src: url('../fonts/Catchy/Catchy\ Mager\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url('../fonts/Rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Cabeçalho*/
+header {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    height: 4vh;
+    margin-left: 10%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 1em;
+}
+
+.menu li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.menu li a:hover {
+    background-color: #0f4068;
+}
+
+/*Início*/
+.inicio {
+    background-image: url('../imgs/fundo.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 5em;
+}
+
+.conteudo-inicial {
+    color: rgb(255, 252, 252);
+    text-align: left;
+}
+
+.conteudo-inicial h1 {
+    font-family: 'Rubik Regular';
+    font-size: 25px;
+    margin: 0 0 0 50px;
+}
+
+.conteudo-inicial #titulo {
+    font-family: 'Catchy';
+    font-size: 150px;
+    margin: 0 0 0 50px;
+}
+
+.conteudo-inicial p {
+    font-family: 'Rubik Light';
+    font-size: 15px;
+    margin: 0 0 0 50px;
+}
+
+/*Conteúdo*/
+.conteudo {
+    background-color: #17171b;
+    padding: 5em 5em 2em 5em;
+    height: 80vh;
+    color: white;
+    text-align: center;
+}
+
+.conteudo h1 {
+    font-family: 'Catchy';
+    font-size: 40px;
+    margin: 0;
+}
+
+.conteudo article {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
+
+.conteudo img {
+    height: 25vh;
+    width: 100%;
+    border: solid 2px #31313a;
+    border-radius: 10px;
+}
+
+.conteudo p {
+    font-family: 'Rubik Light';
+    display: block;
+    margin-top: 0.5em;
+}
+
+/*Responsividade*/
+@media (max-width: 1024px) {
+    .conteudo article {
+        width: 45%;
+    }
+
+    .conteudo h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em 5%;
+    }
+
+    .logo img {
+        margin-left: 0;
+        height: 5vh;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu li {
+        margin: 0.5em 0;
+    }
+
+    .inicio {
+        padding-top: 3em;
+    }
+
+    .conteudo-inicial h1 {
+        font-size: 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .conteudo-inicial #titulo {
+        font-size: 100px;
+        margin: 0 0 0 20px;
+    }
+
+    .conteudo-inicial p {
+        font-size: 13px;
+        margin: 0 0 0 20px;
+    }
+
+    .conteudo article {
+        width: 100%;
+    }
+
+    .conteudo img {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-inicial h1 {
+        font-size: 18px;
+    }
+
+    .conteudo-inicial #titulo {
+        font-size: 60px;
+    }
+
+    .conteudo-inicial p {
+        font-size: 12px;
+    }
+
+    .conteudo {
+        padding: 2em 1em;
+    }
+
+    .conteudo h1 {
+        font-size: 30px;
+    }
+
+    .conteudo article {
+        margin: 1em 0;
+    }
+
+    .conteudo img {
+        height: 18vh;
+    }
+}
