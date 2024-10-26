@@ -19,6 +19,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Cabeçalho*/
 header {
     width: 100%;
@@ -77,7 +84,7 @@ header {
 }
 
 .conteudo-inicial h1 {
-    font-family: 'Catchy';
+    font-family: 'Rubik Regular';
     font-size: 25px;
     margin: 0 0 0 50px;
 }
