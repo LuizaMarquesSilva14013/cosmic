@@ -19,13 +19,6 @@ body {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Rubik Regular';
-    src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*Cabeçalho*/
 header {
     width: 100%;
@@ -84,7 +77,7 @@ header {
 }
 
 .conteudo-inicial h1 {
-    font-family: 'Rubik Regular';
+    font-family: 'Catchy';
     font-size: 25px;
     margin: 0 0 0 50px;
 }
@@ -133,95 +126,4 @@ header {
     font-family: 'Rubik Light';
     display: block;
     margin-top: 0.5em;
-}
-
-/*Responsividade*/
-@media (max-width: 1024px) {
-    .conteudo article {
-        width: 45%;
-    }
-
-    .conteudo h1 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em 5%;
-    }
-
-    .logo img {
-        margin-left: 0;
-        height: 5vh;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        width: 100%;
-        text-align: left;
-    }
-
-    .menu li {
-        margin: 0.5em 0;
-    }
-
-    .inicio {
-        padding-top: 3em;
-    }
-
-    .conteudo-inicial h1 {
-        font-size: 20px;
-        margin: 0 0 0 20px;
-    }
-
-    .conteudo-inicial #titulo {
-        font-size: 100px;
-        margin: 0 0 0 20px;
-    }
-
-    .conteudo-inicial p {
-        font-size: 13px;
-        margin: 0 0 0 20px;
-    }
-
-    .conteudo article {
-        width: 100%;
-    }
-
-    .conteudo img {
-        height: 20vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .conteudo-inicial h1 {
-        font-size: 18px;
-    }
-
-    .conteudo-inicial #titulo {
-        font-size: 60px;
-    }
-
-    .conteudo-inicial p {
-        font-size: 12px;
-    }
-
-    .conteudo {
-        padding: 2em 1em;
-    }
-
-    .conteudo h1 {
-        font-size: 30px;
-    }
-
-    .conteudo article {
-        margin: 1em 0;
-    }
-
-    .conteudo img {
-        height: 18vh;
-    }
 }
